@@ -11,7 +11,18 @@
   font-weight: 400;
   letter-spacing: 0.03em;
 }
-
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* Navigation section*/
 .header {
   font-weight: 500;
@@ -31,18 +42,22 @@
 .nav-link :active {
   color: var(--accent-color);
 }
+
 .connection-nav-link {
   color: var(--primery-text-color);
   text-decoration: none;
   list-style: none;
 }
+
 .connection-nav-link:hover,
 .connection-nav-link:focus,
 .connection-nav-link:active {
   color: var(--accent-color);
   text-decoration: none;
 }
+
 /* Site buttons */
+
 .button {
   color: var(--title-text-color);
   background-color: #f5f4fa;
@@ -51,13 +66,16 @@
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
+
 .button:hover,
 .button:focus,
 .button:active {
   background-color: var(--accent-color);
   color: var(--primery-waite-color);
 }
+
 .hero-button {
   color: var(--primery-waite-color);
   background-color: var(--accent-color);
@@ -67,13 +85,16 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
+
 ul {
   list-style: none;
 }
+
 .logo {
   color: var(--accent-color);
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -83,10 +104,16 @@ ul {
 .logo-accent {
   color: #000000;
 }
-/* Фон для контрасту, потім видалити*/
+
+/* Hero 
+Фон для контрасту, потім видалити*/
+
+.hero {
+  background-color: #2f303a;
+}
+
 .hero-title {
   color: var(--primery-waite-color);
-  background-color: #2f303a;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -94,6 +121,7 @@ ul {
   letter-spacing: 0.06em;
 }
 /* Section headings  */
+
 .features,
 .specialty,
 .team {
@@ -109,6 +137,7 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 .features-text {
   color: var(--primery-text-color);
@@ -130,7 +159,9 @@ ul {
   font-size: 16px;
   line-height: 1.18;
 }
+
 /* Footer section  */
+
 .footer {
   background-color: #2f303a;
 }
@@ -139,6 +170,7 @@ ul {
 }
 .footer-link-address {
   color: var(--primery-waite-color);
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -150,17 +182,20 @@ ul {
   color: var(--accent-color);
 }
 .footer-link {
-  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
 }
+
 .footer-link:hover,
 .footer-link:focus,
 .footer-link:active {
   color: var(--accent-color);
 }
+
 /* Work examples section */
 .project-link {
   text-decoration: none;
