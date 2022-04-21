@@ -3,6 +3,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primery-waite-color: #ffffff;
+  --icon-color: #afb1b8;
 }
 p,
 h1,
@@ -53,7 +54,7 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
-/* Navigation section*/
+/************** Navigation section ***************/
 .header {
   font-weight: 500;
   font-size: 14px;
@@ -67,6 +68,7 @@ img {
 }
 .site-nav {
   display: flex;
+  align-items: center;
   margin-left: 93px;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -76,6 +78,7 @@ img {
 }
 .connection-nav {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 .container.nav {
@@ -83,7 +86,7 @@ img {
   align-items: center;
 }
 .connection-nav .item + .item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .nav-link.active {
   color: var(--accent-color);
@@ -103,9 +106,9 @@ img {
 }
 
 .connection-nav-link {
+  display: flex;
+  align-items: flex-end;
   color: var(--primery-text-color);
-  text-decoration: none;
-  list-style: none;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -114,15 +117,24 @@ img {
 .connection-nav-link:focus,
 .connection-nav-link:active {
   color: var(--accent-color);
-  text-decoration: none;
 }
 
-/* Site buttons */
+.connection-icon {
+  width: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.connection-icon.tel {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/***************** Site buttons ************/
 
 .button-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .button-list .item:not(:last-child) {
   margin-right: 8px;
@@ -196,9 +208,20 @@ img {
   color: #000000;
 }
 
-/* Hero */
+/************** Hero section ************/
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #2f303a;
   text-align: center;
   padding: 200px 0px;
@@ -214,11 +237,12 @@ img {
   margin-bottom: 30px;
 }
 
-/* Section headings  */
+/************ Section headings  ************/
 
 .features,
 .specialty,
-.team {
+.team,
+.customers {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -227,17 +251,19 @@ img {
   margin-bottom: 50px;
 }
 
-/* Features section */
+/**************** Features section *************/
 
 .features-list {
   display: flex;
-  align-content: flex-start;
+  align-content: center;
 }
 
 .features-list .features-item + .features-item {
   margin-left: 30px;
 }
-
+.features-item {
+  width: 270px;
+}
 .features-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -250,19 +276,40 @@ img {
 .features-text {
   color: var(--primery-text-color);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   margin-top: 0px;
   margin-bottom: 0px;
+  text-align: left;
 }
-
-/* Specialization section */
+.features-icon-list {
+  display: flex;
+  justify-content: center;
+}
+.features-icon-item {
+  width: 270px;
+  height: 120px;
+  margin-right: 30px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.features-icon-list .features-icon-item:last-child {
+  margin-right: 0px;
+}
+.features-icon {
+  display: block;
+  background-position: center;
+  margin: 25px auto;
+}
+/************** Specialization section *************/
 
 .specialty-list {
   display: flex;
   justify-content: space-between;
 }
 
-/* Team section */
+/************* Team section ***************/
+
 .section-specialty {
   padding-top: 0px;
   padding-bottom: 94px;
@@ -299,15 +346,78 @@ img {
 .team-text {
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 16px;
 }
 .card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.card-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-item {
+  margin-right: 10px;
+}
+.card-link .card-item:last-child {
+  margin-right: 0px;
+}
+.card-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: block;
+  color: var(--icon-color);
+}
+.card-link:hover {
+  color: var(--primery-waite-color);
+  background-color: var(--accent-color);
+}
+.card-link .icon {
+  fill: currentColor;
+  margin: 12px auto;
+}
+/*************** Customers section **************/
+.customers-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customers-link {
+  width: 170px;
+  height: 92px;
+  display: block;
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.customers-link:hover,
+.customers-link:focus,
+.customers-link:active {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.customers-item {
+  margin-right: 30px;
+}
+.customers-list .customers-item:last-child {
+  margin-right: 0px;
+}
+.customers-icon {
+  display: block;
+  margin: 16px auto;
+  fill: currentColor;
+}
 
-/* Footer section  */
+/***************** Footer section  ***************/
 
-.footer {
+.footer-section {
+  height: 252px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -343,14 +453,64 @@ img {
 .footer-link:active {
   color: var(--accent-color);
 }
-.footer-address {
+.address {
   margin-top: 20px;
 }
 .footer-list .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-/* Work examples section */
+.container.footer {
+  display: flex;
+  align-items: baseline;
+}
+.footer-address {
+  margin-right: 70px;
+}
+
+.subscribe-list {
+  display: flex;
+  width: 206px;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primery-waite-color);
+}
+.subscribe-item {
+}
+.subscribe-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.subscribe-link:hover,
+.subscribe-link:active,
+.subscribe-link:focus {
+  background-color: var(--accent-color);
+}
+.subscribe-list .subscribe-item:last-child {
+  margin-right: 0px;
+}
+.subscribe-item {
+  margin-right: 10px;
+}
+.subscribe-link-icon {
+  fill: var(--primery-waite-color);
+  margin: 12px 12px 12px 12px;
+}
+
+/************* Work examples section **************/
 
 .project-list {
   display: flex;
@@ -363,6 +523,14 @@ img {
 
   background: #ffffff;
   border: 1px solid #eeeeee;
+}
+.project-link.shadow {
+  width: 370px;
+  display: block;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-item:nth-child(3n) {
   margin-right: 0px;
