@@ -107,7 +107,7 @@ img {
 
 .connection-nav-link {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   color: var(--primery-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
