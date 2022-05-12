@@ -1,0 +1,87 @@
+.subscribe__list {
+  width: 206px;
+
+  @extend %centerflex;
+
+  & .subscribe__item:last-child {
+    margin-right: 0px;
+  }
+}
+.subscribe__title {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primery-waite-color;
+}
+
+.subscribe__link {
+  @extend %social-network-link;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.subscribe__item {
+  margin-right: 10px;
+}
+
+.subscribe__icon {
+  fill: $primery-waite-color;
+}
+
+.form-subscribe {
+  margin-left: auto;
+}
+
+.form-subscribe__container {
+  display: flex;
+  align-items: center;
+}
+
+.form-subscribe__title {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primery-waite-color;
+}
+
+.form-subscribe__mail {
+  width: 358px;
+  min-height: 50px;
+  background-color: transparent;
+  margin-right: 12px;
+  padding-left: 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: $primery-waite-color;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: $accent-color;
+  }
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

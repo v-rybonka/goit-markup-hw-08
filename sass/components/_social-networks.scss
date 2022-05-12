@@ -1,0 +1,44 @@
+.card__title {
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.card__text {
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 16px;
+}
+.card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.card__list {
+  @extend %centerflex;
+}
+.card__item {
+  margin-right: 10px;
+  .card__link &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.card__link {
+  @extend %social-network-link;
+
+  color: $icon-color;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $primery-waite-color;
+    background-color: $accent-color;
+  }
+}
+
+.card__icon {
+  fill: currentColor;
+}

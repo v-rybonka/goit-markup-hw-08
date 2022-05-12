@@ -1,0 +1,45 @@
+.footer-section {
+  height: 252px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.address__link {
+  display: inline-block;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent-color;
+  }
+}
+
+.address__link--waite {
+  color: $primery-waite-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address {
+  margin-top: 20px;
+}
+.address__list .address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.container--footer {
+  display: flex;
+  align-items: baseline;
+}
+.footer-address {
+  margin-right: 70px;
+}
