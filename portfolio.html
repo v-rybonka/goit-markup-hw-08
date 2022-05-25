@@ -20,50 +20,79 @@
 
   <body class="page">
     <!-- Header -->
-    <header class="header heder--border">
+     <header class="header heder--border">
       <div class="container header__container">
-        <nav class="main-nav">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo main-nav__logo">Studio</span></a
-          >
-          <ul class="navigation">
-            <li class="navigation__item">
-              <a href="./index.html" class="navigation__link">Студия</a>
-            </li>
-            <li class="navigation__item">
-              <a
-                href="./portfolio.html"
-                class="navigation__link navigation__link--active"
-                >Портфолио</a
+        <a href="./index.html" class="logo logo-heder"
+          >Web<span class="logo main-nav__logo">Studio</span></a
+        >
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle__icon" width="40" height="40" >
+            <use href="./images/icons.svg/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg class="menu-toggle__icon" width="40" height="40" >
+              <use href="./images/icons.svg/symbol-defs.svg#icon-close_mob"></use>
+          </svg>
+            </svg>
+          </button>
+          <nav class="main-nav">
+            <ul class="navigation">
+              <li class="navigation__item">
+                <a
+                  href="./index.html"
+                  class="navigation__link navigation__link--active"
+                  >Студия</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="./portfolio.html" class="navigation__link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="connection-container">
+             <ul class="connection">
+            <li class="connection__item">
+              <a class="connection__link connection__link--padding-top" href="mailto:info@devstudio.com">
+                <svg class="connection__icon" width="16" height="12">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-envelope"
+                  ></use></svg
+                >info@devstudio.com</a
               >
             </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link">Контакты</a>
+            <li class="connection__item">
+              <a class="connection__link connection__link--padding-bottom" href="tel:+380961111111"
+                ><svg class="connection__icon" width="10" height="16">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-smartphone"
+                  ></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="connection">
-          <li class="connection__item">
-            <a class="connection__link" href="mailto:info@devstudio.com">
-              <svg class="connection__icon" width="16" height="12">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-envelope"
-                ></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="connection__item">
-            <a class="connection__link" href="tel:+380961111111"
-              ><svg class="connection__icon" width="10" height="16">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-smartphone"
-                ></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="social">
+            <li class="social__item"><a href="" class="social__link">Instagram</a></li>
+            <li class="social__item"><a href="" class="social__link">Twitter</a></li>
+            <li class="social__item"><a href="" class="social__link">Facebook</a></li>
+            <li class="social__item"><a href="" class="social__link">LinkedIn</a></li>
+          </ul>
+          </div>
+         
+        </div>
       </div>
     </header>
+
 
     <main>
       <!-- Filter-->
@@ -99,12 +128,26 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/img5.jpg"
+                   <picture>
+                <source  
+                srcset="./images/tehnokrak-destop.jpg 1x, 
+                ./images/tehnokrak-destop@2x.jpg 2x"
+                media="(min-width: 1200px)" type="image">
+                
+                <source 
+                srcset="./images/tehnokrak-tablet.jpg 1x, 
+                ./images/tehnokrak-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" type="image">
+                <source 
+                srcset="./images/tehnokrak-mobail.jpg 1x, ./images/tehnokrak-mobail@2x.jpg 2x"
+                media="(min-width: 320px)" type="image">
+                 <img
+                    src="./images/tehnokrak-mobail.jpg"
                     alt="Страница сайта"
-                    width="370"
                     class="project__img"
                   />
+              </picture>
+                 
                   <p class="project__text-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -120,12 +163,28 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/img6.jpg"
+                  <picture>
+                <source  
+                srcset="./images/new-destop.jpg 1x, 
+                ./images/new-destop@2x.jpg 2x"
+                media="(min-width: 1200px)" type="image">
+                
+                <source 
+                srcset="./images/new-tablet.jpg 1x, 
+                ./images/new-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" type="image">
+                <source 
+                srcset="./images/new-mobail.jpg 1x, 
+                ./images/new-mobail@2x.jpg 2x"
+                media="(min-width: 320px)" type="image">
+                 <img
+                    src="./images/new-mobail.jpg"
                     alt="Два баскетболиста"
-                    width="370"
+                  
                     class="project__img"
                   />
+              </picture>
+                  
                   <p class="project__text-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -143,12 +202,28 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/img7.jpg"
-                    alt="Рыба"
-                    width="370"
+                  <picture>
+                <source  
+                srcset="./images/seafood-destop.jpg 1x, 
+                ./images/seafood-destop@2x.jpg 2x"
+                media="(min-width: 1200px)" type="image">
+                
+                <source 
+                srcset="./images/seafood-tablet.jpg 1x, 
+                ./images/seafood-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" type="image">
+                <source 
+                srcset="./images/seafood-mobail.jpg 1x, 
+                ./images/seafood-mobail@2x.jpg 2x"
+                media="(min-width: 320px)" type="image">
+                 <img
+                    src="./images/seafood-mobail.jpg"
+                    alt="Ресторан"
+                    
                     class="project__img"
                   />
+              </picture>
+                  
                   <p class="project__text-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -164,12 +239,28 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/img8.jpg"
+                  <picture>
+                <source  
+                srcset="./images/prime-destop.jpg 1x, 
+                ./images/prime-destop@2x.jpg 2x"
+                media="(min-width: 1200px)" type="image">
+                
+                <source 
+                srcset="./images/prime-tablet.jpg 1x, 
+                ./images/prime-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" type="image">
+                <source 
+                srcset="./images/prime-mobail.jpg 1x, 
+                ./images/prime-mobail@2x.jpg 2x"
+                media="(min-width: 320px)" type="image">
+                 <img
+                    src="./images/prime-mobail.jpg"
                     alt="Беспроводные наушники"
-                    width="370"
+                    
                     class="project__img"
                   />
+              </picture>
+                  
                   <p class="project__text-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -185,12 +276,28 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/img9.jpg"
+                  <picture>
+                <source  
+                srcset="./images/boxes-destop.jpg 1x, 
+                ./images/boxes-destop@2x.jpg 2x"
+                media="(min-width: 1200px)" type="image">
+                
+                <source 
+                srcset="./images/boxes-tablet.jpg 1x, 
+                ./images/boxes-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" type="image">
+                <source 
+                srcset="./images/boxes-mobail.jpg 1x, 
+                ./images/boxes-mobail@2x.jpg 2x"
+                media="(min-width: 320px)" type="image">
+                 <img
+                    src="./images/boxes-mobail.jpg"
                     alt="Две коробки"
-                    width="370"
+                    
                     class="project__img"
                   />
+              </picture>
+                 
                   <p class="project__text-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -206,12 +313,28 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/img10.jpg"
-                    alt="Монитор компьютера"
-                    width="370"
+                  <picture>
+                <source  
+                srcset="./images/inspiration-destop.jpg 1x, 
+                ./images/inspiration-destop@2x.jpg 2x"
+                media="(min-width: 1200px)" type="image">
+                
+                <source 
+                srcset="./images/inspiration-tablet.jpg 1x, 
+                ./images/inspiration-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" type="image">
+                <source 
+                srcset="./images/inspiration-mobail.jpg 1x, 
+                ./images/inspiration-mobail@2x.jpg 2x"
+                media="(min-width: 320px)" type="image">
+                 <img
+                    src="./images/inspiration-mobail.jpg"
+                     alt="Монитор компьютера"
+                   
                     class="project__img"
                   />
+              </picture>
+                 
                   <p class="project__text-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -229,12 +352,28 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/img11.jpg"
+                  <picture>
+                <source  
+                srcset="./images/limited-destop.jpg 1x, 
+                ./images/limited-destop@2x.jpg 2x"
+                media="(min-width: 1200px)" type="image">
+                
+                <source 
+                srcset="./images/limited-tablet.jpg 1x, 
+                ./images/limited-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" type="image">
+                <source 
+                srcset="./images/limited-mobail.jpg 1x, 
+                ./images/limited-mobail@2x.jpg 2x"
+                media="(min-width: 320px)" type="image">
+                 <img
+                    src="./images/limited-mobail.jpg"
                     alt="Макет журнала"
-                    width="370"
+                   
                     class="project__img"
                   />
+              </picture>
+                  
                   <p class="project__text-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -250,12 +389,28 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/img12.jpg"
+                  <picture>
+                <source  
+                srcset="./images/lab-destop.jpg 1x, 
+                ./images/lab-destop@2x.jpg 2x"
+                media="(min-width: 1200px)" type="image">
+                
+                <source 
+                srcset="./images/lab-tablet.jpg 1x, 
+                ./images/lab-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" type="image">
+                <source 
+                srcset="./images/lab-mobail.jpg 1x, 
+                ./images/lab-mobail@2x.jpg 2x"
+                media="(min-width: 320px)" type="image">
+                 <img
+                    src="./images/lab-mobail.jpg"
                     alt="Навесной ярлык"
-                    width="370"
+                    
                     class="project__img"
                   />
+              </picture>
+                  
                   <p class="project__text-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -271,12 +426,28 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/img13.jpg"
+                  <picture>
+                <source  
+                srcset="./images/growing-destop.jpg 1x, 
+                ./images/growing-destop@2x.jpg 2x"
+                media="(min-width: 1200px)" type="image">
+                
+                <source 
+                srcset="./images/growing-tablet.jpg 1x, 
+                ./images/growing-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" type="image">
+                <source 
+                srcset="./images/growing-mobail.jpg 1x, 
+                ./images/growing-mobail@2x.jpg 2x"
+                media="(min-width: 320px)" type="image">
+                 <img
+                    src="./images/growing-mobail.jpg"
                     alt="Работа на ноутбуке"
-                    width="370"
+                    
                     class="project__img"
                   />
+              </picture>
+                  
                   <p class="project__text-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -296,70 +467,73 @@
     <!-- Footer -->
     <footer class="footer-section">
       <div class="container container--footer">
-        <div class="footer-address">
-          <a class="logo" href="./index.html"
-            >Web<span class="logo footer-address__logo">Studio</span>
-          </a>
-          <address class="address">
-            <ul class="address__list">
-              <li class="address__item">
-                <a
-                  class="address__link address__link--waite"
-                  href="https://www.google.com/maps"
-                >
-                  г. Киев, пр-т Леси Украинки, 26
-                </a>
+        <div class="container-address">
+          <div class="footer-address">
+            <a class="logo" href="./index.html"
+              >Web<span class="logo footer-address__logo">Studio</span>
+            </a>
+            <address class="address">
+              <ul class="address__list">
+                <li class="address__item">
+                  <a
+                    class="address__link address__link--waite"
+                    href="https://www.google.com/maps"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="subscribe">
+            <h3 class="subscribe__title">присоединяйтесь</h3>
+            <ul class="subscribe__list">
+              <li class="subscribe__item">
+                <a href="" class="subscribe__link"
+                  ><svg class="subscribe__icon" width="20" height="20">
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#icon-instagram"
+                    ></use></svg
+                ></a>
               </li>
-              <li class="address__item">
-                <a class="address__link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+              <li class="subscribe__item">
+                <a href="" class="subscribe__link"
+                  ><svg class="subscribe__icon" width="20" height="20">
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#icon-twitter"
+                    ></use></svg
+                ></a>
               </li>
-              <li class="address__item">
-                <a class="address__link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+              <li class="subscribe__item">
+                <a href="" class="subscribe__link"
+                  ><svg class="subscribe__icon" width="20" height="20">
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#icon-facebook"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="subscribe__item">
+                <a href="" class="subscribe__link"
+                  ><svg class="subscribe__icon" width="20" height="20">
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
+                    ></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="subscribe">
-          <h3 class="subscribe__title">присоединяйтесь</h3>
-          <ul class="subscribe__list">
-            <li class="subscribe__item">
-              <a href="" class="subscribe__link"
-                ><svg class="subscribe__icon" width="20" height="20">
-                  <use
-                    href="./images/icons.svg/symbol-defs.svg#icon-instagram"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="subscribe__item">
-              <a href="" class="subscribe__link"
-                ><svg class="subscribe__icon" width="20" height="20">
-                  <use
-                    href="./images/icons.svg/symbol-defs.svg#icon-twitter"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="subscribe__item">
-              <a href="" class="subscribe__link"
-                ><svg class="subscribe__icon" width="20" height="20">
-                  <use
-                    href="./images/icons.svg/symbol-defs.svg#icon-facebook"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="subscribe__item">
-              <a href="" class="subscribe__link"
-                ><svg class="subscribe__icon" width="20" height="20">
-                  <use
-                    href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
-                  ></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
+
         <form class="form-subscribe">
           <label class="form-subscribe__title" for="subscribe-mail"
             >Подпишитесь на рассылку</label
@@ -382,5 +556,14 @@
         </form>
       </div>
     </footer>
+    <script src="js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobil-menu.js"></script>
   </body>
 </html>
+  

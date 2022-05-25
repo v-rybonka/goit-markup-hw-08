@@ -26,8 +26,8 @@
 
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
 
   background-color: $primery-waite-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -38,6 +38,11 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__button {
   position: absolute;
@@ -150,9 +155,14 @@
 .check__text {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.16;
+
   letter-spacing: 0.03em;
+  @media (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .check__box-icon {

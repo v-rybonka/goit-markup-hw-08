@@ -6,10 +6,16 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  &.logo-heder {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  &.logo__dark {
+    color: #000000;
+  }
 }
-.main-nav__logo {
-  color: #000000;
-}
+
 .footer-address__logo {
   color: $primery-waite-color;
 }

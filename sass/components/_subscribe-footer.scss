@@ -1,6 +1,4 @@
 .subscribe__list {
-  width: 206px;
-
   @extend %centerflex;
 
   & .subscribe__item:last-child {
@@ -8,10 +6,10 @@
   }
 }
 .subscribe__title {
-  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+
   margin-bottom: 20px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -40,12 +38,16 @@
 }
 
 .form-subscribe {
-  margin-left: auto;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .form-subscribe__container {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .form-subscribe__title {
@@ -53,22 +55,25 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-bottom: 20px;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $primery-waite-color;
+  margin-bottom: 20px;
 }
 
 .form-subscribe__mail {
-  width: 358px;
+  width: 100%;
   min-height: 50px;
   background-color: transparent;
-  margin-right: 12px;
+
+  margin-bottom: 20px;
   padding-left: 16px;
 
   font-size: 16px;
   line-height: 1.25;
   align-items: center;
+
   letter-spacing: 0.03em;
   color: $primery-waite-color;
 
@@ -83,5 +88,14 @@
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0px;
   }
 }
