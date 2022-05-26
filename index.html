@@ -32,15 +32,16 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg class="menu-toggle__icon" width="40" height="40" >
+          <svg class="menu-toggle__icon" width="40" height="40">
             <use href="./images/icons.svg/symbol-defs.svg#icon-menu"></use>
           </svg>
         </button>
         <div class="menu-container js-menu-container" id="mobile-menu">
           <button class="menu-toggle js-close-menu">
-            <svg class="menu-toggle__icon" width="40" height="40" >
-              <use href="./images/icons.svg/symbol-defs.svg#icon-close_mob"></use>
-          </svg>
+            <svg class="menu-toggle__icon" width="40" height="40">
+              <use
+                href="./images/icons.svg/symbol-defs.svg#icon-close_mob"
+              ></use>
             </svg>
           </button>
           <nav class="main-nav">
@@ -63,34 +64,48 @@
             </ul>
           </nav>
           <div class="connection-container">
-             <ul class="connection">
-            <li class="connection__item">
-              <a class="connection__link connection__link--padding-top" href="mailto:info@devstudio.com">
-                <svg class="connection__icon" width="16" height="12">
-                  <use
-                    href="./images/icons.svg/symbol-defs.svg#icon-envelope"
-                  ></use></svg
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="connection__item">
-              <a class="connection__link connection__link--padding-bottom" href="tel:+380961111111"
-                ><svg class="connection__icon" width="10" height="16">
-                  <use
-                    href="./images/icons.svg/symbol-defs.svg#icon-smartphone"
-                  ></use></svg
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-          <ul class="social">
-            <li class="social__item"><a href="" class="social__link">Instagram</a></li>
-            <li class="social__item"><a href="" class="social__link">Twitter</a></li>
-            <li class="social__item"><a href="" class="social__link">Facebook</a></li>
-            <li class="social__item  "><a href="" class="social__link social__link--no-padding">LinkedIn</a></li>
-          </ul>
+            <ul class="connection">
+              <li class="connection__item">
+                <a
+                  class="connection__link connection__link--padding-top"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="connection__icon" width="16" height="12">
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#icon-envelope"
+                    ></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="connection__item">
+                <a
+                  class="connection__link connection__link--larger-font"
+                  href="tel:+380961111111"
+                  ><svg class="connection__icon" width="10" height="16">
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#icon-smartphone"
+                    ></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="social">
+              <li class="social__item">
+                <a href="" class="social__link">Instagram</a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">Twitter</a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">Facebook</a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link social__link--no-padding"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
           </div>
-         
         </div>
       </div>
     </header>
@@ -181,13 +196,16 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="specialty-list">
             <li class="specialty-list__item">
-  
-              <img srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"
-               src="./images/box1.jpg" alt="Программирование"  />
+              <img
+                srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"
+                src="./images/box1.jpg"
+                alt="Программирование"
+              />
               <h3 class="specialty-list__title">Десктопные приложения</h3>
             </li>
             <li class="specialty-list__item">
-              <img srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
+              <img
+                srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
                 src="./images/box2.jpg"
                 alt="Веб-проектирование"
                 width="370"
@@ -195,8 +213,11 @@
               <h3 class="specialty-list__title">Мобильные приложения</h3>
             </li>
             <li class="specialty-list__item">
-              <img srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
-               src="./images/box3.jpg" alt="Дизайн"  />
+              <img
+                srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
+                src="./images/box3.jpg"
+                alt="Дизайн"
+              />
               <h3 class="specialty-list__title">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -210,27 +231,36 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-
               <picture>
-                <source  
-                srcset="./images/igor-destop.jpg 1x, 
-                ./images/igor-destop@2x.jpg 2x"
-                media="min-width:1200px" type="image">
-                
-                <source 
-                srcset="./images/igor-tablet.jpg 1x, 
-                ./images/igor-tablet@2x.jpg 2x"
-                media="min-width:768px" type="image">
-                <source 
-                srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
-                media="(max-width:767px)" type="image">
+                <source
+                  srcset="
+                    ./images/igor-destop.jpg    1x,
+                    ./images/igor-destop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="
+                    ./images/igor-tablet.jpg    1x,
+                    ./images/igor-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
+                  media="(max-width:767px)"
+                  type="image/jpg"
+                />
                 <img
-                src="./images/igor.jpg"
-                alt="фото Игоря Демьяненко"
-                class="team__img"
-              />    
+                  src="./images/igor.jpg"
+                  alt="фото Игоря Демьяненко"
+                  class="team__img"
+                />
               </picture>
-              
+
               <div class="team__box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -272,22 +302,38 @@
             </li>
 
             <li class="team__item">
-             
-
               <picture>
-                <source media="min-width: 1200px" type="image/jpeg"
-                srcset="./images/olga-destop.jpg 1x, ./images/olga-destop@2x.jpg 2x">
-                <source media="min-width: 768px" type="image"
-                srcset="./images/olga-tablet.jpg 1x, ./images/olga-tablet@2x.jpg 2x">
-                <source media="max-width: 767px" type="image"
-                srcset="./images/olga-mobail.jpg 1x, ./images/olga-mobail@2x.jpg 2x">
+                <source
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/olga-destop.jpg    1x,
+                    ./images/olga-destop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/olga-tablet.jpg    1x,
+                    ./images/olga-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/olga-mobail.jpg    1x,
+                    ./images/olga-mobail@2x.jpg 2x
+                  "
+                />
                 <img
-                src="./images/olga-mobail.jpg"
-                alt="фото Ольги Репиной"
-                class="team__img"
-              />  
+                  src="./images/olga-mobail.jpg"
+                  alt="фото Ольги Репиной"
+                  class="team__img"
+                />
               </picture>
-              
+
               <div class="team__box">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -328,23 +374,37 @@
               </div>
             </li>
             <li class="team__item">
-              
-
-               <picture>
-                <source media="min-width: 1200px" type="image"
-                 srcset="./images/nik-destop.jpg 1x, ./images/nik-destop@2x.jpg 2x">
-                <source media="min-width: 768px" type="image"
-                srcset="./images/nik-tablet.jpg 1x, ./images/nik-tablet@2x.jpg 2x">
-                <source media="max-width: 767px" type="image"
-                srcset="./images/nik-mobail.jpg 1x, ./images/nik-mobail@2x.jpg 2x">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/nik-destop.jpg    1x,
+                    ./images/nik-destop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/nik-tablet.jpg    1x,
+                    ./images/nik-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/nik-mobail.jpg    1x,
+                    ./images/nik-mobail@2x.jpg 2x
+                  "
+                />
                 <img
-                src="./images/nik-mobail.jpg"
-                alt="фото Николая Тарасова"
-
-                class="team__img"
-              />  
+                  src="./images/nik-mobail.jpg"
+                  alt="фото Николая Тарасова"
+                  class="team__img"
+                />
               </picture>
-              
+
               <div class="team__box">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -385,22 +445,38 @@
               </div>
             </li>
             <li class="team__item">
-              
-             <picture>
-                <source media="min-width:1200px" type="image"
-                 srcset="./images/miha-destop.jpg, ./images/miha-destop@2x.jpg 2x">
-                <source media="min-width:768px" type="image"
-                srcset="./images/miha-tablet.jpg 1x, ./images/miha-tablet@2x.jpg 2x">
-                <source media="max-width:767px" type="image"
-                srcset="./images/miha-mobail.jpg 1x, ./images/miha-mobail@2x.jpg 2x">
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/miha-destop.jpg,
+                    ./images/miha-destop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/miha-tablet.jpg    1x,
+                    ./images/miha-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width:767px)"
+                  type="image/jpg"
+                  srcset="
+                    ./images/miha-mobail.jpg    1x,
+                    ./images/miha-mobail@2x.jpg 2x
+                  "
+                />
                 <img
-                src="./images/miha-mobail.jpg"
-                alt="фото Михаила Ермакова"
-                
-                class="team__img"
-              />
+                  src="./images/miha-mobail.jpg"
+                  alt="фото Михаила Ермакова"
+                  class="team__img"
+                />
               </picture>
-              
+
               <div class="team__box">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
